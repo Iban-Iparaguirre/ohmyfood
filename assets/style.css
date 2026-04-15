@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Roboto, sans-serif;
+}
+
 .header__logo {
   display: flex;
   justify-content: center;
@@ -13,7 +17,7 @@
   font-weight: 500;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1490196078);
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 .header__local {
   display: flex;
@@ -24,6 +28,8 @@
   background-color: #eaeaea;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   color: #353535;
+  position: relative;
+  z-index: 1;
 }
 .header__local-text {
   border: none;
@@ -31,6 +37,39 @@
   font-weight: bolder;
   color: #353535;
   cursor: pointer;
+}
+
+.explorer {
+  padding: 20px;
+  text-align: center;
+  background-color: #fafafa;
+}
+.explorer__title {
+  padding: 20px 20px 0px 20px;
+  margin: 0;
+}
+.explorer__subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  margin: 20px;
+  color: #353535;
+}
+.explorer__button {
+  background: linear-gradient(180deg, #ff79da, #9356dc);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1490196078);
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+.explorer__button:hover {
+  cursor: pointer;
+  background-color: white;
+  opacity: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
