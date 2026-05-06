@@ -126,7 +126,7 @@ h2 {
 }
 .restaurants__grid {
   display: grid;
-  gap: 20px;
+  gap: 30px;
 }
 .restaurants__card {
   display: block;
@@ -176,19 +176,10 @@ h2 {
   color: #353535;
 }
 .restaurants__like {
-  font-size: 22px;
+  font-size: 25px;
   color: transparent;
   -webkit-text-stroke: 1.5px #353535;
-  cursor: pointer;
   transition: color 0.3s ease, -webkit-text-stroke 0.3s ease;
-  flex-shrink: 0;
-}
-.restaurants__like--active {
-  -webkit-text-stroke: 1.5px transparent;
-  background: linear-gradient(180deg, #ff79da, #9356dc);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 .restaurants__like:hover {
   color: transparent;
