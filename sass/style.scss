@@ -17,6 +17,39 @@ h2 {
     margin: 30px 15px 15px 15px;
 }
 
+.loader {
+    position: fixed;
+    inset: 0;
+    background: rgba(147, 86, 220, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: loaderFadeOut 0.4s ease forwards 2.5s;
+}
+
+@keyframes loaderFadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.loader__spinner {
+    width: 52px;
+    height: 52px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .header {
 
     &__logo {
