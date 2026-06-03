@@ -253,6 +253,85 @@ h2 {
   gap: 12px;
 }
 
+@media (min-width: 1080px) {
+  /* header */
+  .header__logo {
+    font-size: 38px;
+    padding: 20px 0px;
+  }
+  /* explorer */
+  .explorer {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .explorer__title {
+    font-size: 36px;
+    max-width: 600px;
+    margin: 0 auto 16px;
+  }
+  .explorer__subtitle {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  /* function */
+  .function {
+    padding: 40px 150px;
+  }
+  .function__list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .function__button {
+    flex: 1;
+    padding: 25px 22px;
+  }
+  /* restaurants */
+  .restaurants {
+    padding: 40px 150px;
+  }
+  .restaurants__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 100px;
+  }
+  .restaurants__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurants__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+  }
+  /* footer */
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    padding: 50px 30px 30px 30px;
+  }
+  .footer__logo {
+    order: 2;
+    margin: 0;
+  }
+  .footer__list {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 32px;
+    list-style: none;
+    margin: 0 50px;
+    padding: 0;
+  }
+}
 a {
   text-decoration: none;
 }
@@ -474,6 +553,52 @@ header .header__arrow {
   cursor: pointer;
   background-color: white;
   opacity: 80%;
+}
+
+@media (min-width: 1080px) {
+  .restaurant__container {
+    padding: 16px 40px;
+  }
+  header .restaurants__image {
+    height: 380px;
+    object-fit: cover;
+    width: 100%;
+  }
+  /* menu */
+  .menu {
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu__title {
+    font-size: 32px;
+  }
+  .menu__header {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .menuItem {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  /* submenu */
+  .submenu {
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+  }
+  .submenu__title {
+    font-size: 14px;
+    width: 45px;
+  }
+  /* button */
+  .command__button {
+    font-size: 18px;
+    padding: 18px 60px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

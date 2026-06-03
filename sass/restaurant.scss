@@ -188,7 +188,7 @@ header {
             opacity: 1;
         }
     }
-    
+
     opacity: 0;
     animation: fadeInUp 0.4s ease forwards;
 
@@ -221,5 +221,61 @@ header {
         cursor: pointer;
         background-color: white;
         opacity: 80%;
+    }
+}
+
+
+@media (min-width: 1080px) {
+
+    .restaurant__container {
+        padding: 16px 40px;
+    }
+
+    header .restaurants__image {
+        height: 380px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+/* menu */
+    .menu {
+        max-width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu__title {
+        font-size: 32px;
+    }
+
+    .menu__header {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .menuItem {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+/* submenu */
+    .submenu {
+        max-width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+    }
+
+    .submenu__title {
+        font-size: 14px;
+        width: 45px;
+    }
+
+/* button */
+    .command__button {
+        font-size: 18px;
+        padding: 18px 60px;
     }
 }
